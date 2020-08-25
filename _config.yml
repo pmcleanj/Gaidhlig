@@ -11,12 +11,11 @@ owner: Pamela Mclean
 email: pamela@logrus.ca
 
 description: > # this means to ignore newlines until "baseurl:"
-  The Logrus is the nexus of chaos. All reality exists as shadows resonating from the
-  Logrus to the primal Pattern which is the nexus of all order.
-baseurl:  # the subpath of your site, e.g. /blog
+  Goireasan airson an neach-ionnsachaidh Gaidhlig.
+baseurl:  /Gaidhlig
 lang: "en"
-url: "http://localhost:4000" # the base hostname & protocol for your site
-#url: "http://logrus.ca" # the base hostname & protocol for your site
+#url: "http://localhost:4000" # the base hostname & protocol for your site
+url: "http://logrus.ca" # the base hostname & protocol for your site
 twitter_username:
 github_username:
 disqus_username:
@@ -34,30 +33,15 @@ excerpt_separator: <!--more-->
 
 # May change this later, but for now:
 collections:
-    Champions:
+    Vocabulary:
         output: true
-    denizens:
+    SOL links:
         output: true
-    HomeChurchWeb:
-        output: true
-    patterns:
-        output: true
-    RecipeBook:
-        output: true
-    Gaidhlig:
-        output: true
-    SongBook:
-        output: true
-    SundayStories:
+    Flashcards:
         output: true
     
 defaults:
-  - scope:
-      path: ""
-      type: "denizens"
-    values:
-      layout: "denizens"
-  - scope:
+ - scope:
       path: ""
       type: "posts"
     values:
@@ -67,11 +51,6 @@ defaults:
       type: "categories"
     values:
       layout: "categories"
-  - scope:
-      path: ""
-      type: "RecipeBook"
-    values:
-      layout: "RecipeBook"
   - scope:
       path: ""
     values:
